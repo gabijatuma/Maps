@@ -32,8 +32,8 @@ void read()
     int numOfLine = 0;
 
     while (getline(fd, row))
-        {       // Continue reading lines until the end of file is reached
-            rowStream.clear();                // Delete previous error flags
+        {       // read lines until the end of file
+            rowStream.clear();                // Delete error flags of the last row
             rowStream.str(row);               // Make the line readable
             numOfLine ++;
 
